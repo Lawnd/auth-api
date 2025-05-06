@@ -21,5 +21,6 @@ jobs:
           cd ~/auth-api
           git pull origin master
           npm install
+          npm install -g pm2
           npm run migrate up
           pm2 restart auth-api
